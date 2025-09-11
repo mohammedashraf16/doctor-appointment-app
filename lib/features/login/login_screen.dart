@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -6,8 +7,14 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(title: Text('Login')),
-      body: Center(child: Text('Login Screen')),
+      body: Padding(
+        padding:  EdgeInsets.only(right: 30.w,left: 30.w,top: 50.h),
+        child: Column(
+          children: [
+            Text("Welcome Back"),
+          ],
+        ),
+      ),
     );
   }
 }
